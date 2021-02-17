@@ -1,0 +1,25 @@
+extends layout
+block content
+  link(rel='stylesheet', href='/stylesheets/common.css')
+  h1= title
+  p Welcome to #{title}
+
+  div(class='content')
+    ul(class='apiList')
+      each apiItem in apiList
+        li(class='apiItem')
+          h3(class='apiUrl') 
+            label(class='apiUrl-label') apiUrl: #{apiItem.url}
+            span(class='apiMethod') #{apiItem.method}
+          div(class='modal req-modal')
+            h4(class='modal-title') requst
+            each value,key in apiItem.params
+              div(class='param-item')
+                div(class='param-key') #{key}
+                div(class='param-val') #{value}
+          div(class='modal res-modal')
+            h4(class='modal-title') response
+            each value,key in apiItem.result
+              div(class='res-item') #{key}：#{value}
+
+

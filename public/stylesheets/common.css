@@ -1,0 +1,59 @@
+.content {
+  font-size: 14px;
+  color: #333333; }
+  .content .apiList {
+    box-sizing: border-box;
+    padding-top: 30px; }
+    .content .apiList .apiItem {
+      width: 100%;
+      margin-bottom: 15px; }
+      .content .apiList .apiItem .apiUrl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #1e1e1e;
+        font-weight: 500;
+        border: 1px solid;
+        border-radius: 10px 10px 0 0;
+        box-sizing: border-box;
+        padding: 15px 10px; }
+      .content .apiList .apiItem .modal {
+        border: 1px solid;
+        box-sizing: border-box;
+        padding: 15px 10px; }
+        .content .apiList .apiItem .modal .modal-title {
+          box-sizing: border-box;
+          padding: 15px 0;
+          font-size: 16px;
+          color: #333;
+          font-weight: 500; }
+        .content .apiList .apiItem .modal .param-item {
+          box-sizing: border-box;
+          padding: 0 10px;
+          border: 1px solid;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .content .apiList .apiItem .modal .param-item div {
+            width: 50%;
+            text-align: left;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 10px 0; }
+          .content .apiList .apiItem .modal .param-item .param-key {
+            color: #666666;
+            border-right: 1px solid; }
+          .content .apiList .apiItem .modal .param-item .param-val {
+            color: #333333;
+            box-sizing: border-box;
+            padding-left: 10px; }
+      .content .apiList .apiItem .req-modal {
+        border-top: 0;
+        border-bottom: 0; }
+      .content .apiList .apiItem .res-modal {
+        border-radius: 0 0 10px 10px; }
+
+/*# sourceMappingURL=common.css.map */
